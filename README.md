@@ -1,7 +1,15 @@
 # Alpirac — GitHub Pages mini-site (FR/EN)
 
-Drop these files into a GitHub repository and enable GitHub Pages (Settings → Pages).
+Static site for:
+- Home page (FR/EN)
+- Support page (App Store support URL)
+- Privacy policy
+- Disclaimer / limitation of liability
 
-- Root redirects to FR/EN based on browser language.
-- Legal pages: privacy policy + disclaimer/limitation of liability.
-- Links are relative, works for user site and project site.
+Deploy:
+1) Push these files to a GitHub repo
+2) Repo → Settings → Pages → Deploy from branch → main / (root)
+
+Support URLs:
+- .../fr/support.html
+- .../en/support.html
