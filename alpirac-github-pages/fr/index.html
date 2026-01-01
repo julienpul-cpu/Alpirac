@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alpirac — Application montagne</title>
+  <meta name="description" content="Alpirac : compagnon iOS/iPadOS pour préparer, enregistrer et analyser vos activités outdoor, avec synchronisation iCloud et options HealthKit." />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <strong>Alpirac</strong>
+          <span>Outdoor companion • iOS / iPadOS</span>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Navigation">
+        <a class="pill" href="./">Accueil</a>
+        <a class="pill" href="privacy.html">Politique</a>
+        <a class="pill" href="liability.html">Mentions</a>
+        <a class="pill" href="../en/">EN</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>Alpirac, l’app pour vos sorties en montagne.</h1>
+          <p class="lead">
+            Alpirac aide à préparer, enregistrer et relire vos activités outdoor : statistiques, segments, traces GPS,
+            et données de sommets / refuges / itinéraires. Certaines fonctions peuvent produire des résumés à titre indicatif.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="privacy.html">Lire la politique de confidentialité</a>
+            <a class="btn ghost" href="liability.html">Avertissement & limites</a>
+            <a class="btn ghost" href="mailto:julien.pul@icloud.com">Contacter</a>
+          </div>
+
+          <p class="note">
+            Astuce : tu peux ajouter des captures dans <span class="kbd">assets/</span> et les intégrer ici plus tard.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Respect de la vie privée</h3>
+          <p>
+            Pas de vente de données. Synchronisation via iCloud/CloudKit. HealthKit uniquement si vous l’autorisez.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Activités & statistiques</h3>
+          <p>Suivi GPS, altitude, distance, durée, segments, et synthèse lisible après la sortie.</p>
+        </div>
+        <div class="card">
+          <h3>Référentiels montagne</h3>
+          <p>Données de sommets, refuges et itinéraires pour enrichir la préparation (selon disponibilité).</p>
+        </div>
+        <div class="card">
+          <h3>iCloud & appareils Apple</h3>
+          <p>Données sur l’appareil + iCloud/CloudKit si activé, sans serveur tiers opéré par le développeur.</p>
+        </div>
+      </div>
+
+      <section class="section" aria-label="Liens rapides">
+        <h2>Liens rapides</h2>
+        <ul>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="liability.html">Avertissement & limites de responsabilité</a></li>
+          <li><a href="mailto:julien.pul@icloud.com">Support : julien.pul@icloud.com</a></li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="y"></span> Alpirac • Julien Pulhuj</div>
+        <div class="links">
+          <a href="privacy.html">Politique</a>
+          <a href="liability.html">Mentions</a>
+          <a href="../en/">English</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
