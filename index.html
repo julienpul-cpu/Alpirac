@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Alpirac — Legal</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>Alpirac</h1>
+          <p class="lead">Redirection vers la langue du navigateur…</p>
+          <div class="cta-row">
+            <a class="btn primary" href="fr/">Français</a>
+            <a class="btn ghost" href="en/">English</a>
+          </div>
+          <p class="note">Si rien ne se passe, choisis une langue.</p>
+        </div>
+        <div class="card">
+          <h3>Pages légales</h3>
+          <p>Politique de confidentialité et avertissements. Version FR et EN.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var lang = (navigator.language || 'fr').toLowerCase();
+      var target = lang.startsWith('fr') ? 'fr/' : 'en/';
+      if (!location.pathname.endsWith('/fr/') && !location.pathname.endsWith('/en/')) {
+        location.replace(target);
+      }
+    })();
+  </script>
+</body>
+</html>
